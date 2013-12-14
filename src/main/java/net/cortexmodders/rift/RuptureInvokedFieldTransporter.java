@@ -1,7 +1,10 @@
 package net.cortexmodders.rift;
 
+import net.cortexmodders.rift.lib.BlockIds;
+import net.cortexmodders.rift.lib.ItemIds;
 import net.cortexmodders.rift.lib.ModInfo;
 import net.cortexmodders.rift.proxy.CommonProxy;
+import net.minecraftforge.common.Configuration;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
@@ -22,16 +25,23 @@ public class RuptureInvokedFieldTransporter
     @SidedProxy(clientSide = ModInfo.CLIENT_PROXY, serverSide = ModInfo.COMMON_PROXY)
     public static CommonProxy proxy;
     
+    public static Configuration config;
+    
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
+        config = new Configuration(event.getSuggestedConfigurationFile());
+        config.load();
         
+        BlockIds.init(config);
+        ItemIds.init(config);
     }
     
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
-        
+        proxy.setupBlocks();
+        proxy.setupItems();
     }
     
     @EventHandler
