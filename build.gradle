@@ -29,8 +29,8 @@ minecraft {
 
 // version and stuff
 version = "0.5.0"
-group= "matt.lyoko"
-archivesBaseName = "CodeLyoko-forge-${minecraft.version}"
+group= "net.cortexmodders"
+archivesBaseName = "R.I.F.T-forge-${minecraft.version}"
 
 // jar naming
 jar
