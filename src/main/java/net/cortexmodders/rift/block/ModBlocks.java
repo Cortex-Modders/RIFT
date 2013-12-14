@@ -2,6 +2,7 @@ package net.cortexmodders.rift.block;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.cortexmodders.rift.lib.BlockIds;
+import net.cortexmodders.rift.manage.Rift;
 
 public class ModBlocks
 {
