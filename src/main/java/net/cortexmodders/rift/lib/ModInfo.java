@@ -1,6 +1,6 @@
 package net.cortexmodders.rift.lib;
 
-public class RIFTModInfo
+public class ModInfo
 {
 
     public static final String MOD_ID = "rift";

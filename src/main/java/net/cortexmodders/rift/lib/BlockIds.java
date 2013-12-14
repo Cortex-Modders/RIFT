@@ -1,6 +1,6 @@
 package net.cortexmodders.rift.lib;
 
-public class RIFTBlockIds
+public class BlockIds
 {
 
 }

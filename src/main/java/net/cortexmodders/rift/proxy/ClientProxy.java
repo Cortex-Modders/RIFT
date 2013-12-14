@@ -1,6 +1,6 @@
 package net.cortexmodders.rift.proxy;
 
-public class ClientProxy
+public class ClientProxy extends CommonProxy
 {
 
 }
