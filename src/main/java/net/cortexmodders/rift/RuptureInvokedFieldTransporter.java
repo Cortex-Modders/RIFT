@@ -36,6 +36,8 @@ public class RuptureInvokedFieldTransporter
         
         BlockIds.init(config);
         ItemIds.init(config);
+        
+        config.save();
     }
     
     @EventHandler
