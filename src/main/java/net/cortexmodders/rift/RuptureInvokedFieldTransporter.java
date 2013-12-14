@@ -1,5 +1,6 @@
 package net.cortexmodders.rift;
 
+import net.cortexmodders.rift.block.ModBlocks;
 import net.cortexmodders.rift.lib.BlockIds;
 import net.cortexmodders.rift.lib.ItemIds;
 import net.cortexmodders.rift.lib.ModInfo;
@@ -40,6 +41,7 @@ public class RuptureInvokedFieldTransporter
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
+        ModBlocks.init();
         proxy.setupBlocks();
         proxy.setupItems();
     }
@@ -47,7 +49,8 @@ public class RuptureInvokedFieldTransporter
     @EventHandler
     public void postInit(FMLPostInitializationEvent event)
     {
-        
+       
     }
+    
     
 }
