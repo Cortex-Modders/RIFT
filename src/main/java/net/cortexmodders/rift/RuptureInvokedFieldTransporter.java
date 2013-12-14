@@ -43,7 +43,6 @@ public class RuptureInvokedFieldTransporter
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
-        ModBlocks.init();
         proxy.setupBlocks();
         proxy.setupItems();
     }
