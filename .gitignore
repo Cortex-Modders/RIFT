@@ -1,4 +1,4 @@
-# Build and Release Folders
+﻿# Build and Release Folders
 target/
 build/
 bin/
@@ -7,8 +7,8 @@ bin/
 .settings/
 .gradle/
 eclipse/
-main/
-test/
+/main/
+/test/
 
 .project
 .classpath
